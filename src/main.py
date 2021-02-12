@@ -22,7 +22,7 @@ class EmailService(views.MethodView):
         
         # Host names of email providers
         self.hosts = {'mailgun' :
-                      "https://api.mailgun.net/v3/sandboxcbd0c7b41cac4c63bb2a9819c4bc534a/messages",
+                      "",
                       'sendgrid' :
                       ""}
 
@@ -33,7 +33,7 @@ class EmailService(views.MethodView):
         # Fields composed in an email
         self.fields = ['to', 'to_name', 'from','from_name', 'subject', 'body']
     
-        ## Function to send emails
+    ## Function to send emails
     #
     def post(self):
         
